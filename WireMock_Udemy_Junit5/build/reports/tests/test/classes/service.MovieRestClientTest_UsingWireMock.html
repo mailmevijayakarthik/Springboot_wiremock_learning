@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MovieRestClientTest_UsingWireMock</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MovieRestClientTest_UsingWireMock</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/service.html">service</a> &gt; MovieRestClientTest_UsingWireMock</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">17</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.352s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">addmovie()</td>
+<td class="success">0.074s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addmovie_ResponseTemplate()</td>
+<td class="success">1.284s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addmovie_notfound()</td>
+<td class="success">0.082s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deletemovie()</td>
+<td class="success">0.124s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deletemovie_ByMovieName()</td>
+<td class="success">0.118s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deletemovie_notfound()</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMovieByID()</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMovieByID_ResponseTemplate()</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMovieByID_notfound()</td>
+<td class="success">0.052s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMoviebyName()</td>
+<td class="success">0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMoviebyName_ResponseTemplate()</td>
+<td class="success">0.083s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMoviebyName_notfound()</td>
+<td class="success">0.061s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMoviebyYear()</td>
+<td class="success">0.055s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveMoviebyYear_notfound()</td>
+<td class="success">0.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retriveallMovies()</td>
+<td class="success">0.065s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updatemovie()</td>
+<td class="success">0.061s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updatemovie_notfound()</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-02-26 11:50:05.207 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:06.238 Received request to /mappings with body {
+  &quot;id&quot; : &quot;0d4db48c-9a53-4e62-8ef3-bea94a49db10&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movie&quot;,
+    &quot;method&quot; : &quot;POST&quot;,
+    &quot;bodyPatterns&quot; : [ {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.name&quot;,
+        &quot;equalTo&quot; : &quot;Sarkar&quot;
+      }
+    }, {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.cast&quot;,
+        &quot;contains&quot; : &quot;Vijay&quot;
+      }
+    } ]
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;add_movie_ResponseTemplate.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;0d4db48c-9a53-4e62-8ef3-bea94a49db10&quot;
+}
+2020-02-26 11:50:06.872 Request received:
+127.0.0.1 - POST /movieservice/v1/movie
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+Content-Length: [87]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Vijay&quot;,&quot;movie_id&quot;:null,&quot;name&quot;:&quot;Sarkar&quot;,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;{\n  \&quot;movie_id\&quot;: \&quot;25\&quot;,\n  \&quot;name\&quot;: \&quot;Sarkar\&quot;,\n  \&quot;year\&quot;: \&quot;2019\&quot;,\n  \&quot;cast\&quot;: \&quot;Vijay\&quot;,\n  \&quot;release_date\&quot;: \&quot;2020-02-26T17:50:06Z\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;add_movie_ResponseTemplate.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [0d4db48c-9a53-4e62-8ef3-bea94a49db10]
+
+
+2020-02-26 11:50:06.954 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:06.966 Received request to /mappings with body {
+  &quot;id&quot; : &quot;5fb876b2-dad6-41ce-952b-735e19dafde8&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movie&quot;,
+    &quot;method&quot; : &quot;POST&quot;,
+    &quot;bodyPatterns&quot; : [ {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.name&quot;,
+        &quot;equalTo&quot; : &quot;Sarkar&quot;
+      }
+    }, {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.cast&quot;,
+        &quot;contains&quot; : &quot;Vijay&quot;
+      }
+    } ]
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;add_movie.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;5fb876b2-dad6-41ce-952b-735e19dafde8&quot;
+}
+2020-02-26 11:50:07.009 Request received:
+127.0.0.1 - POST /movieservice/v1/movie
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+Content-Length: [87]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Vijay&quot;,&quot;movie_id&quot;:null,&quot;name&quot;:&quot;Sarkar&quot;,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;{\n  \&quot;movie_id\&quot;: 11,\n  \&quot;name\&quot;: \&quot;Sivaji\&quot;,\n  \&quot;year\&quot;: 2009,\n  \&quot;cast\&quot;: \&quot;Rajiii\&quot;,\n  \&quot;release_date\&quot;: \&quot;2009-12-12\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;add_movie.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [5fb876b2-dad6-41ce-952b-735e19dafde8]
+
+
+2020-02-26 11:50:07.033 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.051 Received request to /mappings with body {
+  &quot;id&quot; : &quot;6d2d4e48-2fb8-4e0c-aaf7-0c0db1a841c5&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movie&quot;,
+    &quot;method&quot; : &quot;POST&quot;,
+    &quot;bodyPatterns&quot; : [ {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.name&quot;,
+        &quot;equalTo&quot; : &quot;Sarkar&quot;
+      }
+    }, {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.cast&quot;,
+        &quot;contains&quot; : &quot;Vijay&quot;
+      }
+    } ]
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;add_movie_ResponseTemplate.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;6d2d4e48-2fb8-4e0c-aaf7-0c0db1a841c5&quot;
+}
+2020-02-26 11:50:07.105 Request received:
+127.0.0.1 - POST /movieservice/v1/movie
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+Content-Length: [87]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Vijay&quot;,&quot;movie_id&quot;:null,&quot;name&quot;:&quot;Sarkar&quot;,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;{\n  \&quot;movie_id\&quot;: \&quot;41\&quot;,\n  \&quot;name\&quot;: \&quot;Sarkar\&quot;,\n  \&quot;year\&quot;: \&quot;2019\&quot;,\n  \&quot;cast\&quot;: \&quot;Vijay\&quot;,\n  \&quot;release_date\&quot;: \&quot;2020-02-26T17:50:07Z\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;add_movie_ResponseTemplate.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [6d2d4e48-2fb8-4e0c-aaf7-0c0db1a841c5]
+
+
+2020-02-26 11:50:07.115 Received request to /mappings with body {
+  &quot;id&quot; : &quot;41cbc912-8277-407e-80ba-58a4336d8d3f&quot;,
+  &quot;request&quot; : {
+    &quot;urlPathPattern&quot; : &quot;/movieservice/v1/movie/[0-9]+&quot;,
+    &quot;method&quot; : &quot;DELETE&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;body&quot; : &quot;Movie Deleted Successfully&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;41cbc912-8277-407e-80ba-58a4336d8d3f&quot;
+}
+2020-02-26 11:50:07.147 Request received:
+127.0.0.1 - DELETE /movieservice/v1/movie/41
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;Movie Deleted Successfully&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [41cbc912-8277-407e-80ba-58a4336d8d3f]
+
+
+2020-02-26 11:50:07.163 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.179 Received request to /mappings with body {
+  &quot;id&quot; : &quot;2f0c17e6-d43e-43c7-95aa-a4db855fbdff&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movie&quot;,
+    &quot;method&quot; : &quot;POST&quot;,
+    &quot;bodyPatterns&quot; : [ {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.cast&quot;,
+        &quot;contains&quot; : &quot;Vijay&quot;
+      }
+    } ]
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 400,
+    &quot;bodyFileName&quot; : &quot;400_movies.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;2f0c17e6-d43e-43c7-95aa-a4db855fbdff&quot;
+}
+2020-02-26 11:50:07.233 Request received:
+127.0.0.1 - POST /movieservice/v1/movie
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+Content-Length: [83]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Vijay&quot;,&quot;movie_id&quot;:null,&quot;name&quot;:null,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 400,
+  &quot;body&quot; : &quot;{\n  \&quot;timestamp\&quot;: \&quot;2020-02-26T17:50:07Z\&quot;,\n  \&quot;status\&quot;: 400,\n  \&quot;error\&quot;: \&quot;Bad Request\&quot;,\n  \&quot;message\&quot;: \&quot;Please pass all the input fields : [name]\&quot;,\n  \&quot;path\&quot;: \&quot;/movieservice/v1/movie\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;400_movies.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 400
+Content-Type: [application/json]
+Matched-Stub-Id: [2f0c17e6-d43e-43c7-95aa-a4db855fbdff]
+
+
+2020-02-26 11:50:07.252 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.271 Received request to /mappings with body {
+  &quot;id&quot; : &quot;91425a4d-56c3-4867-a179-3e9136a70637&quot;,
+  &quot;request&quot; : {
+    &quot;urlPathPattern&quot; : &quot;/movieservice/v1/movie/[0-9]+&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 404,
+    &quot;bodyFileName&quot; : &quot;404_movies.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;91425a4d-56c3-4867-a179-3e9136a70637&quot;
+}
+2020-02-26 11:50:07.301 Request received:
+127.0.0.1 - GET /movieservice/v1/movie/200
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 404,
+  &quot;body&quot; : &quot;{\n  \&quot;timestamp\&quot;: \&quot;2020-02-26T17:50:07Z\&quot;,\n  \&quot;status\&quot;: 404,\n  \&quot;error\&quot;: \&quot;Not Found\&quot;,\n  \&quot;message\&quot;: \&quot;No Movie Available with the given Id - 200\&quot;,\n  \&quot;path\&quot;: \&quot;/movieservice/v1/movie/200\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;404_movies.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 404
+Content-Type: [application/json]
+Matched-Stub-Id: [91425a4d-56c3-4867-a179-3e9136a70637]
+
+
+2020-02-26 11:50:07.308 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.325 Received request to /mappings with body {
+  &quot;id&quot; : &quot;d2f3f0c2-d60f-4dc7-9d57-f5d4f5a1062a&quot;,
+  &quot;request&quot; : {
+    &quot;urlPathPattern&quot; : &quot;/movieservice/v1/movie/[0-9]+&quot;,
+    &quot;method&quot; : &quot;PUT&quot;,
+    &quot;bodyPatterns&quot; : [ {
+      &quot;matchesJsonPath&quot; : &quot;$.cast&quot;
+    } ]
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 404,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;d2f3f0c2-d60f-4dc7-9d57-f5d4f5a1062a&quot;
+}
+2020-02-26 11:50:07.354 Request received:
+127.0.0.1 - PUT /movieservice/v1/movie/100
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+Content-Length: [90]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Karthik&quot;,&quot;movie_id&quot;:100,&quot;name&quot;:&quot;Avatar 2&quot;,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 404,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 404
+Content-Type: [application/json]
+Matched-Stub-Id: [d2f3f0c2-d60f-4dc7-9d57-f5d4f5a1062a]
+
+
+2020-02-26 11:50:07.365 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.380 Received request to /mappings with body {
+  &quot;id&quot; : &quot;5a6c2498-d7e9-41b8-b105-b69e3c62494e&quot;,
+  &quot;request&quot; : {
+    &quot;urlPathPattern&quot; : &quot;/movieservice/v1/movie/[0-9]+&quot;,
+    &quot;method&quot; : &quot;PUT&quot;,
+    &quot;bodyPatterns&quot; : [ {
+      &quot;matchesJsonPath&quot; : &quot;$.cast&quot;
+    } ]
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;update_movie.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;5a6c2498-d7e9-41b8-b105-b69e3c62494e&quot;
+}
+2020-02-26 11:50:07.421 Request received:
+127.0.0.1 - PUT /movieservice/v1/movie/1
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+Content-Length: [88]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Karthik&quot;,&quot;movie_id&quot;:1,&quot;name&quot;:&quot;Avatar 2&quot;,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;{\n  \&quot;movie_id\&quot;: \&quot;1\&quot;,\n  \&quot;name\&quot;: \&quot;Avatar 2\&quot;,\n  \&quot;year\&quot;: 2005,\n  \&quot;cast\&quot;: \&quot;Christian Bale, Katie Holmes , Liam Neeson, Karthik\&quot;,\n  \&quot;release_date\&quot;: \&quot;2005-06-15\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;update_movie.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [5a6c2498-d7e9-41b8-b105-b69e3c62494e]
+
+
+Movie(cast=Christian Bale, Katie Holmes , Liam Neeson, Karthik, movie_id=1, name=Avatar 2, release_date=2005-06-15, year=2005)
+Get Cast :Christian Bale, Katie Holmes , Liam Neeson, Karthik
+2020-02-26 11:50:07.436 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.455 Received request to /mappings with body {
+  &quot;id&quot; : &quot;b8041042-5604-4f3d-a47c-a0410e0ac817&quot;,
+  &quot;request&quot; : {
+    &quot;urlPathPattern&quot; : &quot;/movieservice/v1/movie/[0-9]+&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;single_movie_ResponseTemplate.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;b8041042-5604-4f3d-a47c-a0410e0ac817&quot;
+}
+2020-02-26 11:50:07.488 Request received:
+127.0.0.1 - GET /movieservice/v1/movie/8
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;{\n  \&quot;movie_id\&quot;: \&quot;8\&quot;,\n  \&quot;name\&quot;: \&quot;Avatar 2\&quot;,\n  \&quot;year\&quot;: 2005,\n  \&quot;cast\&quot;: \&quot;Christian Bale, Katie Holmes , Liam Neeson\&quot;,\n  \&quot;release_date\&quot;: \&quot;2005-06-15\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;single_movie_ResponseTemplate.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [b8041042-5604-4f3d-a47c-a0410e0ac817]
+
+
+2020-02-26 11:50:07.499 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.524 Received request to /mappings with body {
+  &quot;id&quot; : &quot;b7b255c1-a8f2-4f42-8eac-ccdbe89f86b9&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movieName&quot;,
+    &quot;method&quot; : &quot;GET&quot;,
+    &quot;queryParameters&quot; : {
+      &quot;movie_name&quot; : {
+        &quot;equalTo&quot; : &quot;SuperMan&quot;
+      }
+    }
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;search_avengers_ResponseTemplate.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;b7b255c1-a8f2-4f42-8eac-ccdbe89f86b9&quot;
+}
+2020-02-26 11:50:07.574 Request received:
+127.0.0.1 - GET /movieservice/v1/movieName?movie_name=SuperMan
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;[\n  {\n    \&quot;movie_id\&quot;: 4,\n    \&quot;name\&quot;: \&quot;The SuperMan\&quot;,\n    \&quot;year\&quot;: 2012,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2012-05-04\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 5,\n    \&quot;name\&quot;: \&quot;SuperMan: Age of Ultron\&quot;,\n    \&quot;year\&quot;: 2015,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2015-05-01\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 6,\n    \&quot;name\&quot;: \&quot;SuperMan: Infinity War\&quot;,\n    \&quot;year\&quot;: 2018,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2018-04-27\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 7,\n    \&quot;name\&quot;: \&quot;SuperMan: End Game\&quot;,\n    \&quot;year\&quot;: 2019,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2019-04-26\&quot;\n  }\n]&quot;,
+  &quot;bodyFileName&quot; : &quot;search_avengers_ResponseTemplate.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [b7b255c1-a8f2-4f42-8eac-ccdbe89f86b9]
+
+
+2020-02-26 11:50:07.587 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.604 Received request to /mappings with body {
+  &quot;id&quot; : &quot;49e848c5-647a-4731-9475-a28f1b806820&quot;,
+  &quot;request&quot; : {
+    &quot;urlPathPattern&quot; : &quot;/movieservice/v1/movie/[0-9]+&quot;,
+    &quot;method&quot; : &quot;DELETE&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 404,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;49e848c5-647a-4731-9475-a28f1b806820&quot;
+}
+2020-02-26 11:50:07.631 Request received:
+127.0.0.1 - DELETE /movieservice/v1/movie/1000
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 404,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 404
+Content-Type: [application/json]
+Matched-Stub-Id: [49e848c5-647a-4731-9475-a28f1b806820]
+
+
+2020-02-26 11:50:07.641 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.653 Received request to /mappings with body {
+  &quot;id&quot; : &quot;d2afbfb7-a261-41c8-adcc-0001b5622233&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movieYear&quot;,
+    &quot;method&quot; : &quot;GET&quot;,
+    &quot;queryParameters&quot; : {
+      &quot;year&quot; : {
+        &quot;equalTo&quot; : &quot;2020&quot;
+      }
+    }
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 404,
+    &quot;bodyFileName&quot; : &quot;404_for_Year.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;d2afbfb7-a261-41c8-adcc-0001b5622233&quot;
+}
+2020-02-26 11:50:07.687 Request received:
+127.0.0.1 - GET /movieservice/v1/movieYear?year=2020
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 404,
+  &quot;body&quot; : &quot;{\n  \&quot;timestamp\&quot;: \&quot;2020-02-26T17:50:07Z\&quot;,\n  \&quot;status\&quot;: 404,\n  \&quot;error\&quot;: \&quot;Not Found\&quot;,\n  \&quot;message\&quot;: \&quot;No Movie Available with the given year - 2020\&quot;,\n  \&quot;path\&quot;: \&quot;/movieservice/v1/movieYear\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;404_for_Year.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 404
+Content-Type: [application/json]
+Matched-Stub-Id: [d2afbfb7-a261-41c8-adcc-0001b5622233]
+
+
+2020-02-26 11:50:07.697 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.709 Received request to /mappings with body {
+  &quot;id&quot; : &quot;1e6e6fdb-f05e-4a3d-beb2-163581a6ed66&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movieName&quot;,
+    &quot;method&quot; : &quot;GET&quot;,
+    &quot;queryParameters&quot; : {
+      &quot;movie_name&quot; : {
+        &quot;equalTo&quot; : &quot;Avenger1&quot;
+      }
+    }
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 404,
+    &quot;bodyFileName&quot; : &quot;search_avengers.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;1e6e6fdb-f05e-4a3d-beb2-163581a6ed66&quot;
+}
+2020-02-26 11:50:07.746 Request received:
+127.0.0.1 - GET /movieservice/v1/movieName?movie_name=Avenger1
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 404,
+  &quot;body&quot; : &quot;[\n  {\n    \&quot;movie_id\&quot;: 4,\n    \&quot;name\&quot;: \&quot;The Avengers\&quot;,\n    \&quot;year\&quot;: 2012,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2012-05-04\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 5,\n    \&quot;name\&quot;: \&quot;Avengers: Age of Ultron\&quot;,\n    \&quot;year\&quot;: 2015,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2015-05-01\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 6,\n    \&quot;name\&quot;: \&quot;Avengers: Infinity War\&quot;,\n    \&quot;year\&quot;: 2018,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2018-04-27\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 7,\n    \&quot;name\&quot;: \&quot;Avengers: End Game\&quot;,\n    \&quot;year\&quot;: 2019,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2019-04-26\&quot;\n  }\n]&quot;,
+  &quot;bodyFileName&quot; : &quot;search_avengers.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 404
+Content-Type: [application/json]
+Matched-Stub-Id: [1e6e6fdb-f05e-4a3d-beb2-163581a6ed66]
+
+
+2020-02-26 11:50:07.763 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.795 Received request to /mappings with body {
+  &quot;id&quot; : &quot;aa61e294-331f-4a17-90d6-157e16b2332b&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movie&quot;,
+    &quot;method&quot; : &quot;POST&quot;,
+    &quot;bodyPatterns&quot; : [ {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.name&quot;,
+        &quot;equalTo&quot; : &quot;Sarkar&quot;
+      }
+    }, {
+      &quot;matchesJsonPath&quot; : {
+        &quot;expression&quot; : &quot;$.cast&quot;,
+        &quot;contains&quot; : &quot;Vijay&quot;
+      }
+    } ]
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;add_movie_ResponseTemplate.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;aa61e294-331f-4a17-90d6-157e16b2332b&quot;
+}
+2020-02-26 11:50:07.825 Request received:
+127.0.0.1 - POST /movieservice/v1/movie
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+Content-Length: [87]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Vijay&quot;,&quot;movie_id&quot;:null,&quot;name&quot;:&quot;Sarkar&quot;,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;{\n  \&quot;movie_id\&quot;: \&quot;58\&quot;,\n  \&quot;name\&quot;: \&quot;Sarkar\&quot;,\n  \&quot;year\&quot;: \&quot;2019\&quot;,\n  \&quot;cast\&quot;: \&quot;Vijay\&quot;,\n  \&quot;release_date\&quot;: \&quot;2020-02-26T17:50:07Z\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;add_movie_ResponseTemplate.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [aa61e294-331f-4a17-90d6-157e16b2332b]
+
+
+2020-02-26 11:50:07.832 Received request to /mappings with body {
+  &quot;id&quot; : &quot;870d84ef-7343-4c09-b5e4-79d7ddd63d67&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/movieservice/v1/movieName?movie_name=Sarkar&quot;,
+    &quot;method&quot; : &quot;DELETE&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;870d84ef-7343-4c09-b5e4-79d7ddd63d67&quot;
+}
+2020-02-26 11:50:07.850 Request received:
+127.0.0.1 - DELETE /movieservice/v1/movieName?movie_name=Sarkar
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [870d84ef-7343-4c09-b5e4-79d7ddd63d67]
+
+
+2020-02-26 11:50:07.859 Received request to /requests/count with body {
+  &quot;urlPath&quot; : &quot;/movieservice/v1/movie&quot;,
+  &quot;method&quot; : &quot;POST&quot;,
+  &quot;bodyPatterns&quot; : [ {
+    &quot;matchesJsonPath&quot; : {
+      &quot;expression&quot; : &quot;$.name&quot;,
+      &quot;equalTo&quot; : &quot;Sarkar&quot;
+    }
+  }, {
+    &quot;matchesJsonPath&quot; : {
+      &quot;expression&quot; : &quot;$.cast&quot;,
+      &quot;contains&quot; : &quot;Vijay&quot;
+    }
+  } ]
+}
+2020-02-26 11:50:07.863 Warning: JSON path expression '$.name' failed to match document '' because of error 'json string can not be null or empty'
+2020-02-26 11:50:07.864 Warning: JSON path expression '$.cast' failed to match document '' because of error 'json string can not be null or empty'
+2020-02-26 11:50:07.874 Received request to /requests/count with body {
+  &quot;url&quot; : &quot;/movieservice/v1/movieName?movie_name=Sarkar&quot;,
+  &quot;method&quot; : &quot;DELETE&quot;
+}
+2020-02-26 11:50:07.887 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.898 Received request to /mappings with body {
+  &quot;id&quot; : &quot;3740d503-b2b3-4f91-912a-220d5dfd0b22&quot;,
+  &quot;request&quot; : {
+    &quot;urlPathPattern&quot; : &quot;/movieservice/v1/movie/[0-9]+&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;single_movie.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;3740d503-b2b3-4f91-912a-220d5dfd0b22&quot;
+}
+2020-02-26 11:50:07.924 Request received:
+127.0.0.1 - GET /movieservice/v1/movie/1
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;{\n  \&quot;movie_id\&quot;: 1,\n  \&quot;name\&quot;: \&quot;Avatar 2\&quot;,\n  \&quot;year\&quot;: 2005,\n  \&quot;cast\&quot;: \&quot;Christian Bale, Katie Holmes , Liam Neeson\&quot;,\n  \&quot;release_date\&quot;: \&quot;2005-06-15\&quot;\n}&quot;,
+  &quot;bodyFileName&quot; : &quot;single_movie.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [3740d503-b2b3-4f91-912a-220d5dfd0b22]
+
+
+2020-02-26 11:50:07.932 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:07.946 Received request to /mappings with body {
+  &quot;id&quot; : &quot;0d9e6035-18a4-40e5-8c62-8b8bff8bec81&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movieName&quot;,
+    &quot;method&quot; : &quot;GET&quot;,
+    &quot;queryParameters&quot; : {
+      &quot;movie_name&quot; : {
+        &quot;equalTo&quot; : &quot;Avenger&quot;
+      }
+    }
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;search_avengers.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;0d9e6035-18a4-40e5-8c62-8b8bff8bec81&quot;
+}
+2020-02-26 11:50:07.971 Request received:
+127.0.0.1 - GET /movieservice/v1/movieName?movie_name=Avenger
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;[\n  {\n    \&quot;movie_id\&quot;: 4,\n    \&quot;name\&quot;: \&quot;The Avengers\&quot;,\n    \&quot;year\&quot;: 2012,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2012-05-04\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 5,\n    \&quot;name\&quot;: \&quot;Avengers: Age of Ultron\&quot;,\n    \&quot;year\&quot;: 2015,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2015-05-01\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 6,\n    \&quot;name\&quot;: \&quot;Avengers: Infinity War\&quot;,\n    \&quot;year\&quot;: 2018,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2018-04-27\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 7,\n    \&quot;name\&quot;: \&quot;Avengers: End Game\&quot;,\n    \&quot;year\&quot;: 2019,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2019-04-26\&quot;\n  }\n]&quot;,
+  &quot;bodyFileName&quot; : &quot;search_avengers.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [0d9e6035-18a4-40e5-8c62-8b8bff8bec81]
+
+
+2020-02-26 11:50:07.988 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:08.000 Received request to /mappings with body {
+  &quot;id&quot; : &quot;084ef3f5-8932-45df-aa1b-350b6546cf49&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/movieYear&quot;,
+    &quot;method&quot; : &quot;GET&quot;,
+    &quot;queryParameters&quot; : {
+      &quot;year&quot; : {
+        &quot;equalTo&quot; : &quot;2012&quot;
+      }
+    }
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;searchmovieby_year_ResponseTemplate.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;084ef3f5-8932-45df-aa1b-350b6546cf49&quot;
+}
+2020-02-26 11:50:08.037 Request received:
+127.0.0.1 - GET /movieservice/v1/movieYear?year=2012
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;[\n  {\n    \&quot;movie_id\&quot;: 4,\n    \&quot;name\&quot;: \&quot;The Avengers\&quot;,\n    \&quot;year\&quot;: \&quot;2012\&quot;,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2012-05-04\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 5,\n    \&quot;name\&quot;: \&quot;Avengers: Age of Ultron\&quot;,\n    \&quot;year\&quot;: \&quot;2012\&quot;,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2015-05-01\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 6,\n    \&quot;name\&quot;: \&quot;Avengers: Infinity War\&quot;,\n    \&quot;year\&quot;: \&quot;2012\&quot;,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2018-04-27\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 7,\n    \&quot;name\&quot;: \&quot;Avengers: End Game\&quot;,\n    \&quot;year\&quot;: \&quot;2012\&quot;,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2019-04-26\&quot;\n  }\n]&quot;,
+  &quot;bodyFileName&quot; : &quot;searchmovieby_year_ResponseTemplate.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [084ef3f5-8932-45df-aa1b-350b6546cf49]
+
+
+[Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=4, name=The Avengers, release_date=2012-05-04, year=2012), Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=5, name=Avengers: Age of Ultron, release_date=2015-05-01, year=2012), Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=6, name=Avengers: Infinity War, release_date=2018-04-27, year=2012), Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=7, name=Avengers: End Game, release_date=2019-04-26, year=2012)]
+2020-02-26 11:50:08.047 Verbose logging enabled
+http://localhost:8088
+2020-02-26 11:50:08.057 Received request to /mappings with body {
+  &quot;id&quot; : &quot;dba7e36f-9f0f-4928-961b-88edda4f092e&quot;,
+  &quot;request&quot; : {
+    &quot;urlPath&quot; : &quot;/movieservice/v1/allMovies&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;bodyFileName&quot; : &quot;allmovies.json&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;dba7e36f-9f0f-4928-961b-88edda4f092e&quot;
+}
+2020-02-26 11:50:08.088 Request received:
+127.0.0.1 - GET /movieservice/v1/allMovies
+
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;body&quot; : &quot;[\n  {\n    \&quot;movie_id\&quot;: 1,\n    \&quot;name\&quot;: \&quot;Batman Begins\&quot;,\n    \&quot;year\&quot;: 2005,\n    \&quot;cast\&quot;: \&quot;Christian Bale, Katie Holmes , Liam Neeson\&quot;,\n    \&quot;release_date\&quot;: \&quot;2005-06-15\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 2,\n    \&quot;name\&quot;: \&quot;Dark Knight\&quot;,\n    \&quot;year\&quot;: 2008,\n    \&quot;cast\&quot;: \&quot;Christian Bale, Heath Ledger , Michael Caine\&quot;,\n    \&quot;release_date\&quot;: \&quot;2008-07-18\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 3,\n    \&quot;name\&quot;: \&quot;The Dark Knight Rises\&quot;,\n    \&quot;year\&quot;: 2012,\n    \&quot;cast\&quot;: \&quot;Christian Bale, Heath Ledger , Michael Caine\&quot;,\n    \&quot;release_date\&quot;: \&quot;2012-07-20\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 4,\n    \&quot;name\&quot;: \&quot;The Avengers\&quot;,\n    \&quot;year\&quot;: 2012,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2012-05-04\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 5,\n    \&quot;name\&quot;: \&quot;Avengers: Age of Ultron\&quot;,\n    \&quot;year\&quot;: 2015,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2015-05-01\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 6,\n    \&quot;name\&quot;: \&quot;Avengers: Infinity War\&quot;,\n    \&quot;year\&quot;: 2018,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2018-04-27\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 7,\n    \&quot;name\&quot;: \&quot;Avengers: End Game\&quot;,\n    \&quot;year\&quot;: 2019,\n    \&quot;cast\&quot;: \&quot;Robert Downey Jr, Chris Evans , Chris HemsWorth\&quot;,\n    \&quot;release_date\&quot;: \&quot;2019-04-26\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 8,\n    \&quot;name\&quot;: \&quot;The Hangover\&quot;,\n    \&quot;year\&quot;: 2009,\n    \&quot;cast\&quot;: \&quot;Bradley Cooper, Ed Helms , Zach Galifianakis\&quot;,\n    \&quot;release_date\&quot;: \&quot;2009-06-05\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 9,\n    \&quot;name\&quot;: \&quot;The Imitation Game\&quot;,\n    \&quot;year\&quot;: 2014,\n    \&quot;cast\&quot;: \&quot;Benedict Cumberbatch, Keira Knightley\&quot;,\n    \&quot;release_date\&quot;: \&quot;2014-12-25\&quot;\n  },\n  {\n    \&quot;movie_id\&quot;: 10,\n    \&quot;name\&quot;: \&quot;The Departed\&quot;,\n    \&quot;year\&quot;: 2006,\n    \&quot;cast\&quot;: \&quot;Leonardo DiCaprio, Matt Damon , Mark Wahlberg\&quot;,\n    \&quot;release_date\&quot;: \&quot;2006-10-06\&quot;\n  }\n]&quot;,
+  &quot;bodyFileName&quot; : &quot;allmovies.json&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [dba7e36f-9f0f-4928-961b-88edda4f092e]
+
+
+[Movie(cast=Christian Bale, Katie Holmes , Liam Neeson, movie_id=1, name=Batman Begins, release_date=2005-06-15, year=2005), Movie(cast=Christian Bale, Heath Ledger , Michael Caine, movie_id=2, name=Dark Knight, release_date=2008-07-18, year=2008), Movie(cast=Christian Bale, Heath Ledger , Michael Caine, movie_id=3, name=The Dark Knight Rises, release_date=2012-07-20, year=2012), Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=4, name=The Avengers, release_date=2012-05-04, year=2012), Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=5, name=Avengers: Age of Ultron, release_date=2015-05-01, year=2015), Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=6, name=Avengers: Infinity War, release_date=2018-04-27, year=2018), Movie(cast=Robert Downey Jr, Chris Evans , Chris HemsWorth, movie_id=7, name=Avengers: End Game, release_date=2019-04-26, year=2019), Movie(cast=Bradley Cooper, Ed Helms , Zach Galifianakis, movie_id=8, name=The Hangover, release_date=2009-06-05, year=2009), Movie(cast=Benedict Cumberbatch, Keira Knightley, movie_id=9, name=The Imitation Game, release_date=2014-12-25, year=2014), Movie(cast=Leonardo DiCaprio, Matt Damon , Mark Wahlberg, movie_id=10, name=The Departed, release_date=2006-10-06, year=2006)]
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO org.eclipse.jetty.util.log - Logging initialized @1165ms
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@390b6f71{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@609555ca{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@6cb7b2ad{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @1286ms
+[qtp1280139098-20] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1280139098-21] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@6cb7b2ad{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@609555ca{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@390b6f71{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@13415724{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4dbbc8fc{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@1c697146{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @2537ms
+[qtp252197174-34] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp252197174-35] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@1c697146{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4dbbc8fc{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@13415724{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4b28d136{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b756599{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@3659b2a0{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @2619ms
+[qtp1160697554-46] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1160697554-47] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@3659b2a0{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3b756599{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4b28d136{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6e1f943c{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@19d2c440{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@b7e1d32{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @2749ms
+[qtp1718725609-57] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1718725609-58] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] ERROR service.MovieRestClient - WebClientResponseException in retriveMoviebyID and the message is {
+  &quot;timestamp&quot;: &quot;2020-02-26T17:50:07Z&quot;,
+  &quot;status&quot;: 400,
+  &quot;error&quot;: &quot;Bad Request&quot;,
+  &quot;message&quot;: &quot;Please pass all the input fields : [name]&quot;,
+  &quot;path&quot;: &quot;/movieservice/v1/movie&quot;
+} with Status as  400 BAD_REQUEST
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@b7e1d32{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@19d2c440{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6e1f943c{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b7e2756{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1acae7c6{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@50c4275e{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @2835ms
+[qtp614939058-67] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp614939058-68] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] ERROR service.MovieRestClient - WebClientResponseException in retriveMoviebyID and the message is {
+  &quot;timestamp&quot;: &quot;2020-02-26T17:50:07Z&quot;,
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Not Found&quot;,
+  &quot;message&quot;: &quot;No Movie Available with the given Id - 200&quot;,
+  &quot;path&quot;: &quot;/movieservice/v1/movie/200&quot;
+} with Status as  404 NOT_FOUND
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@50c4275e{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1acae7c6{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3b7e2756{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@124d4e38{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7cc99ccc{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@48d31e3{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @2895ms
+[qtp960031375-77] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp960031375-78] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] ERROR service.MovieRestClient - WebClientResponseException in retriveMoviebyID and the message is  with Status as  404 NOT_FOUND
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@48d31e3{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7cc99ccc{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@124d4e38{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@67737e09{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2358a925{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@5f270871{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @2950ms
+[qtp60839445-87] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp60839445-88] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@5f270871{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2358a925{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@67737e09{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@163e9920{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@73c88b62{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@496ae98d{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3019ms
+[qtp764690539-97] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp764690539-98] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@496ae98d{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@73c88b62{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@163e9920{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ce5b9a4{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ab76b04{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@582474e3{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3083ms
+[qtp1296906048-107] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1296906048-108] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@582474e3{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3ab76b04{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3ce5b9a4{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@586c1d60{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7df668f{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@3fe0fc09{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3172ms
+[qtp1444996309-117] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1444996309-118] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] ERROR service.MovieRestClient - WebClientResponseException in retriveMoviebyID and the message is  with Status as  404 NOT_FOUND
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@3fe0fc09{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7df668f{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@586c1d60{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@53375bd7{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@34fc1085{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@5dfc1c2e{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3224ms
+[qtp51597182-127] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp51597182-128] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] ERROR service.MovieRestClient - WebClientResponseException in retriveMoviebyYear and the message is {
+  &quot;timestamp&quot;: &quot;2020-02-26T17:50:07Z&quot;,
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Not Found&quot;,
+  &quot;message&quot;: &quot;No Movie Available with the given year - 2020&quot;,
+  &quot;path&quot;: &quot;/movieservice/v1/movieYear&quot;
+} with Status as  404 NOT_FOUND
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@5dfc1c2e{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@34fc1085{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@53375bd7{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1641b137{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1b41250f{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@92e759{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3280ms
+[qtp493370774-137] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp493370774-138] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] ERROR service.MovieRestClient - WebClientResponseException in retriveMoviebyName and the message is [
+  {
+    &quot;movie_id&quot;: 4,
+    &quot;name&quot;: &quot;The Avengers&quot;,
+    &quot;year&quot;: 2012,
+    &quot;cast&quot;: &quot;Robert Downey Jr, Chris Evans , Chris HemsWorth&quot;,
+    &quot;release_date&quot;: &quot;2012-05-04&quot;
+  },
+  {
+    &quot;movie_id&quot;: 5,
+    &quot;name&quot;: &quot;Avengers: Age of Ultron&quot;,
+    &quot;year&quot;: 2015,
+    &quot;cast&quot;: &quot;Robert Downey Jr, Chris Evans , Chris HemsWorth&quot;,
+    &quot;release_date&quot;: &quot;2015-05-01&quot;
+  },
+  {
+    &quot;movie_id&quot;: 6,
+    &quot;name&quot;: &quot;Avengers: Infinity War&quot;,
+    &quot;year&quot;: 2018,
+    &quot;cast&quot;: &quot;Robert Downey Jr, Chris Evans , Chris HemsWorth&quot;,
+    &quot;release_date&quot;: &quot;2018-04-27&quot;
+  },
+  {
+    &quot;movie_id&quot;: 7,
+    &quot;name&quot;: &quot;Avengers: End Game&quot;,
+    &quot;year&quot;: 2019,
+    &quot;cast&quot;: &quot;Robert Downey Jr, Chris Evans , Chris HemsWorth&quot;,
+    &quot;release_date&quot;: &quot;2019-04-26&quot;
+  }
+] with Status as  404 NOT_FOUND
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@92e759{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1b41250f{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1641b137{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@79d6fb3f{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1f8dd0bb{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@bd00c1f{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3362ms
+[qtp1354843007-147] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1354843007-148] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@bd00c1f{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1f8dd0bb{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@79d6fb3f{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1bad7ec6{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7a37daff{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@18d033ca{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3469ms
+[qtp2102345254-157] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp2102345254-158] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@18d033ca{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7a37daff{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1bad7ec6{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5a4ea00b{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@643f08fe{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@4bd7777{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3516ms
+[qtp1520653128-167] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1520653128-168] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@4bd7777{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@643f08fe{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5a4ea00b{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4116d9b4{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@34a83be9{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@5f91a61f{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3571ms
+[qtp1012791739-177] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1012791739-178] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@5f91a61f{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@34a83be9{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4116d9b4{/__admin,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.2.24.v20180105
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3889f488{/__admin,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4cfdba02{/,null,AVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Started NetworkTrafficServerConnector@3b272aa1{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @3628ms
+[qtp905315710-187] INFO /__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp905315710-188] INFO / - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO org.eclipse.jetty.server.NetworkTrafficServerConnector - Stopped NetworkTrafficServerConnector@3b272aa1{HTTP/1.1}{0.0.0.0:8088}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4cfdba02{/,null,UNAVAILABLE}
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3889f488{/__admin,null,UNAVAILABLE}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Feb 26, 2020, 11:50:08 AM</p>
+</div>
+</div>
+</body>
+</html>

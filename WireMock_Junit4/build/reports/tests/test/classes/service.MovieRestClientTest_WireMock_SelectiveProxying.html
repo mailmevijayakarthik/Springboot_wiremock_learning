@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class service.MovieRestClientTest_WireMock_SelectiveProxying</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class service.MovieRestClientTest_WireMock_SelectiveProxying</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/service.html">service</a> &gt; MovieRestClientTest_WireMock_SelectiveProxying</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.549s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">deletemovie_ByMovieName_SelectiveProxying</td>
+<td class="success">1.549s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-02-26 19:30:48.141 Verbose logging enabled
+http://localhost:8088
+2020-02-26 19:30:49.441 Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/11.0.6)]
+Host: [localhost:8088]
+Content-Length: [231]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;b48294eb-e222-430e-a386-6d2cd43789b5&quot;,
+  &quot;request&quot; : {
+    &quot;method&quot; : &quot;ANY&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;proxyBaseUrl&quot; : &quot;http://localhost:8081&quot;
+  },
+  &quot;uuid&quot; : &quot;b48294eb-e222-430e-a386-6d2cd43789b5&quot;
+}
+
+2020-02-26 19:30:50.024 Proxying: POST http://localhost:8081/movieservice/v1/movie
+2020-02-26 19:30:50.042 Request received:
+127.0.0.1 - POST /movieservice/v1/movie
+
+Accept: [*/*]
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+Content-Length: [87]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;cast&quot;:&quot;Vijay&quot;,&quot;movie_id&quot;:null,&quot;name&quot;:&quot;Sarkar&quot;,&quot;release_date&quot;:[2019,6,30],&quot;year&quot;:2019}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;proxyBaseUrl&quot; : &quot;http://localhost:8081&quot;
+}
+
+Response:
+HTTP/1.1 201
+Content-Type: [application/json;charset=UTF-8]
+Transfer-Encoding: [chunked]
+Date: [Thu, 27 Feb 2020 01:30:50 GMT]
+
+
+2020-02-26 19:30:50.139 Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/11.0.6)]
+Host: [localhost:8088]
+Content-Length: [315]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;43a15b92-17ed-4f74-a373-e8db8811efb8&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/movieservice/v1/movieName?movie_name=Sarkar&quot;,
+    &quot;method&quot; : &quot;DELETE&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    }
+  },
+  &quot;uuid&quot; : &quot;43a15b92-17ed-4f74-a373-e8db8811efb8&quot;
+}
+
+2020-02-26 19:30:50.184 Request received:
+127.0.0.1 - DELETE /movieservice/v1/movieName?movie_name=Sarkar
+
+Accept: [*/*]
+User-Agent: [ReactorNetty/0.8.9.RELEASE]
+Host: [localhost:8088]
+Accept-Encoding: [gzip]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [43a15b92-17ed-4f74-a373-e8db8811efb8]
+
+
+2020-02-26 19:30:50.198 Admin request received:
+127.0.0.1 - POST /requests/count
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/11.0.6)]
+Host: [localhost:8088]
+Content-Length: [280]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;urlPath&quot; : &quot;/movieservice/v1/movie&quot;,
+  &quot;method&quot; : &quot;POST&quot;,
+  &quot;bodyPatterns&quot; : [ {
+    &quot;matchesJsonPath&quot; : {
+      &quot;expression&quot; : &quot;$.name&quot;,
+      &quot;equalTo&quot; : &quot;Sarkar&quot;
+    }
+  }, {
+    &quot;matchesJsonPath&quot; : {
+      &quot;expression&quot; : &quot;$.cast&quot;,
+      &quot;contains&quot; : &quot;Vijay&quot;
+    }
+  } ]
+}
+
+2020-02-26 19:30:50.248 Warning: JSON path expression '$.name' failed to match document 'null' because of error 'json string can not be null or empty'
+2020-02-26 19:30:50.249 Warning: JSON path expression '$.cast' failed to match document 'null' because of error 'json string can not be null or empty'
+2020-02-26 19:30:50.259 Admin request received:
+127.0.0.1 - POST /requests/count
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/11.0.6)]
+Host: [localhost:8088]
+Content-Length: [83]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;url&quot; : &quot;/movieservice/v1/movieName?movie_name=Sarkar&quot;,
+  &quot;method&quot; : &quot;DELETE&quot;
+}
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO wiremock.org.eclipse.jetty.util.log - Logging initialized @1048ms to wiremock.org.eclipse.jetty.util.log.Slf4jLog
+[Test worker] INFO wiremock.org.eclipse.jetty.server.Server - jetty-9.4.z-SNAPSHOT; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.6+8-LTS
+[Test worker] INFO wiremock.org.eclipse.jetty.server.handler.ContextHandler - Started w.o.e.j.s.ServletContextHandler@69d0f114{/__admin,null,AVAILABLE}
+[Test worker] INFO wiremock.org.eclipse.jetty.server.handler.ContextHandler - Started w.o.e.j.s.ServletContextHandler@34a92c3c{/,null,AVAILABLE}
+[Test worker] INFO wiremock.org.eclipse.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@192da1bc{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+[Test worker] INFO wiremock.org.eclipse.jetty.server.Server - Started @1248ms
+[qtp1327527545-21] INFO wiremock.org.eclipse.jetty.server.handler.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+[qtp1327527545-15] INFO wiremock.org.eclipse.jetty.server.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+[Test worker] INFO wiremock.org.eclipse.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@192da1bc{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+[Test worker] INFO wiremock.org.eclipse.jetty.server.handler.ContextHandler - Stopped w.o.e.j.s.ServletContextHandler@34a92c3c{/,null,UNAVAILABLE}
+[Test worker] INFO wiremock.org.eclipse.jetty.server.handler.ContextHandler - Stopped w.o.e.j.s.ServletContextHandler@69d0f114{/__admin,null,UNAVAILABLE}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Feb 26, 2020, 7:30:50 PM</p>
+</div>
+</div>
+</body>
+</html>
